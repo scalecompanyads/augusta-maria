@@ -37,7 +37,7 @@
   }
 
   *, *::before, *::after { box-sizing: border-box; }
-  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: hidden; overflow-x: clip; }
   body {
     margin: 0; background: var(--cream); color: var(--ink);
     font-family: var(--sans); font-size: 16.5px; line-height: 1.65;
@@ -152,7 +152,7 @@
   .cta-lead + .cta-row { margin-top: 20px; }
 
   /* Situações: carrossel com card central em destaque */
-  .sit-sec { padding: clamp(56px, 8vh, 96px) 0; }
+  .sit-sec { padding: clamp(56px, 8vh, 96px) 0; overflow: hidden; overflow: clip; }
   .sit-title { font-size: clamp(1.8rem, 3.4vw, 2.8rem); text-transform: uppercase; letter-spacing: .01em; line-height: 1.04; }
   .sit-sec .sec-head p { margin-top: 12px; font-size: 1rem; }
   .sit-carousel { position: relative; margin-top: clamp(24px, 3.5vh, 40px); outline: none; }
